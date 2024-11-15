@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Selamat Datang{% endblock %}</title>
+</head>
+<style>
+    body {font-family: Arial;}
+    .borderatas {max-width: 80%; margin: auto; background-color: #242561; text-align: center; color:aliceblue;}
+    .bordermenu{max-width:80%; margin: auto; background-color: beige; text-align: center; color:black;}
+</style>
+<body>
+    <div class="borderatas">
+        <h1>Selamat Datang ke Laman Utama Aplikasi ini!</h1>
+    </div>
+    <div class="bordermenu">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('aplikasisatu')}}">Aplikasi Satu</a></li>
+            </ul>
+        </nav>
+    </div>
+    {% block content %}{% endblock %}
+
+</body>
+</html>
